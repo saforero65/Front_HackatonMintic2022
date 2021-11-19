@@ -16,9 +16,4 @@ public class AppController {
 		
 		return "login";
 	}
-	
-	@GetMapping("/error")
-	public String viewErrorPage() {
-		return "404";
-	}
 }
