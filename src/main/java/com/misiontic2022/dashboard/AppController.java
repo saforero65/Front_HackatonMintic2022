@@ -6,8 +6,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AppController {
 
-	@GetMapping("")
+	@GetMapping("/")
 	public String viewHomePage() {
 		return "index";
+	}
+	
+	@GetMapping("/login")
+	public String viewLoginPage() {
+		
+		return "login";
+	}
+	
+	@GetMapping("/error")
+	public String viewErrorPage() {
+		return "404";
 	}
 }
